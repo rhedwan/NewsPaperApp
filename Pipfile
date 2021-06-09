@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+whitenoise = "*"
+environs = {extras = ["django"], version = "*"}
+gunicorn = "==19.9.0"
 
 [dev-packages]
 

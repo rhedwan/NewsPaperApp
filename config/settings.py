@@ -23,8 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 from environs import Env # new
+
 env = Env() # new
 env.read_env() # new
+
+
+
 
 SECRET_KEY = env.str("SECRET_KEY")
 
