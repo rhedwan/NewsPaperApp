@@ -9,6 +9,7 @@ whitenoise = "*"
 environs = {extras = ["django"], version = "*"}
 gunicorn = "==19.9.0"
 django-crispy-forms = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
