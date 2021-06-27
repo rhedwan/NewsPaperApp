@@ -30,7 +30,7 @@ class ArticleDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self): # new
         obj = self.get_object()
-        return obj.author == self.request.user
+        return obj.author == self.request.user 
 
 class ArticleCreateView(LoginRequiredMixin, CreateView): # new
     model = Article
